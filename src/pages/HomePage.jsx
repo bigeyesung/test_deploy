@@ -10,7 +10,7 @@ import iconNoticeActive from '../assets/images/icon/notice-filled.svg';
 const HomePage = () => {
   return (
     <>
-      {/* 一欄式頁面 */}
+      {/* 一欄式頁面123 */}
       <ContainerColOne>
         <div>
           <img
