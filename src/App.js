@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   // Link,
   Routes,
-  Route,
+  Route, HashRouter
 } from 'react-router-dom';
 
 //import css
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <Router basename={basename}>
+      <HashRouter basename={basename}>
         <PageLayout>
           <Routes>
             <Route path='*' element={<StoryBookPage />}></Route>
@@ -49,7 +49,7 @@ function App() {
           </Routes>
           {modalOpen && <Modal setModalOpen={setModalOpen} />}
         </PageLayout>
-      </Router>
+      </HashRouter>
     </>
   );
 }
