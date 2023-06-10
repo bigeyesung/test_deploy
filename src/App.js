@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   // Link,
   Routes,
-  Route, HashRouter
+  Route,
+  HashRouter,
 } from 'react-router-dom';
 
 //import css
@@ -25,13 +26,14 @@ import AdminUsers from './pages/AdminUsers';
 import Modal from './components/basic/Modal';
 import TweetPage from './pages/TweetPage';
 
-function App() {
+function App({ router }) {
   const [modalOpen, setModalOpen] = useState(false);
-  const basename = process.env.PUBLIC_URL;
+  // const basename = process.env.PUBLIC_URL;
 
   return (
     <>
-      <HashRouter basename={basename}>
+      {/* <Router basename={basename}> */}
+      <HashRouter>
         <PageLayout>
           <Routes>
             <Route path='*' element={<StoryBookPage />}></Route>
@@ -50,6 +52,7 @@ function App() {
           {modalOpen && <Modal setModalOpen={setModalOpen} />}
         </PageLayout>
       </HashRouter>
+      {/* </Router> */}
     </>
   );
 }
