@@ -13,7 +13,7 @@ const LayoutNav = () => {
         <div className='storybook-container'>
           <h2>Storybooks</h2>
           <h4 className='page-sec-title'>
-            === v_2 Buttons-元件本身目前沒有製作上下margin，是本表顯示用 ===
+            === v_3 Buttons-元件本身目前沒有製作上下margin，是本表顯示用 ===
           </h4>
 
           <div className='flex_col_cc comp-container'>
